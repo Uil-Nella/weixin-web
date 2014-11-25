@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>WeiXin</display-name>
+  <servlet>  
+        <servlet-name>coreServlet</servlet-name>  
+        <servlet-class>  
+            org.cs.demo.servlet.CoreServlet  
+        </servlet-class>  
+    </servlet>
+  <servlet>  
+        <servlet-name>NEUQCoreServlet</servlet-name>  
+        <servlet-class>  
+            org.cs.demo.servlet.NEUQCoreServlet  
+        </servlet-class>  
+    </servlet>
+  <servlet>
+    <servlet-name>UserServlet</servlet-name>
+    <servlet-class>org.cs.demo.manager.control.UserServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>TestServlet</servlet-name>
+    <servlet-class>org.cs.demo.manager.control.TestServlet</servlet-class>
+  </servlet>
+
+  
+  
+    <!-- url-pattern中配置的/coreServlet用于指定该Servlet的访问路径 -->  
+    <servlet-mapping>  
+        <servlet-name>coreServlet</servlet-name>  
+        <url-pattern>/coreServlet</url-pattern>  
+    </servlet-mapping>
+    <servlet-mapping>  
+        <servlet-name>NEUQCoreServlet</servlet-name>  
+        <url-pattern>/NEUQCoreServlet</url-pattern>  
+    </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UserServlet</servlet-name>
+    <url-pattern>/userServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>TestServlet</servlet-name>
+    <url-pattern>/testServlet</url-pattern>
+  </servlet-mapping>  
+  
+    <welcome-file-list>  
+        <welcome-file>login.jsp</welcome-file>  
+    </welcome-file-list>  
+</web-app>

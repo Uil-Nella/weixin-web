@@ -1,0 +1,19 @@
+<!DOCTYPE hibernate-configuration PUBLIC
+	"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+	<session-factory name="haha">
+		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+		<!--  
+		<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/weixin</property>
+		-->
+		<property name="hibernate.connection.url">jdbc:mysql://sqld.duapp.com:4050/ixhxRCxdxwLQLZEsZGyV</property>
+		<property name="connection.username">TYkcGwgjiIinBOE3mgs7BgkC</property>
+		<property name="connection.password">KClrbG2vjh1cXglbQqU9UBCkfb6Olp1o</property>
+		<property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+		<property name="hibernate.hbm2ddl.auto">update</property>
+		<property name="show_sql">true</property>	
+		<mapping resource="org/cs/demo/manager/db/model/pojo/User.hbm.xml"/>
+	</session-factory>
+</hibernate-configuration>
